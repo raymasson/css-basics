@@ -9,24 +9,81 @@
             {
                 color: blue;
                 font-size: medium;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
             h1
             {
                 color: red;
                 font-size: x-large;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
+            h2
+            {
+                color: blueviolet;
+                font-size: larger;
+            }
+            footer p
+            {
+                font-size: x-small;
+                color: black;
+            }
+            .h1-class
+            {
+                background-color: grey;
+            }
+            .italic
+            {
+                font-style: italic;
+                color: black;
+            }
+            #section1
+            {
+                background-color: grey;
+            }
+            #section1 p
+            {
+                color: black;
+            }
+            #section1 :first-child {color: blue;}
+
+            ul :nth-child(odd) {background-color: aqua;}
+            ul :nth-child(even) {background-color: aquamarine;}
+
+            #section1 p:nth-of-type(odd) {background-color:red;}
+            #section1 p:nth-of-type(even) {background-color: violet;}     
+
+            .wholePage
+            {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                width: 700px;
+                margin: 5 auto;
+            }    
+
+            .wholePage div 
+            {
+                background-color: powderblue;
+            }   
+
         </style>
     </head>
-    <body>
-        <h1>
-            h1 style
-        </h1>
-        <p>
-            p style
-        </p>
+    <body class="wholePage">
+        <div>
+            <h1>h1 title</h1>
+            <h1 class="h1-class">h1 title with background</h1>
+            <h2>h2 title</h2>
+            <p>blue text</p>
+            <p class="italic">italic text</p>
+            <section id="section1">
+                <p>paragraph 1</p>
+                <p>paragraph 2</p>
+            </section>
+            <ul>
+                <li>Entry 1</li>
+                <li>Entry 2</li>
+                <li>Entry 3</li>
+                <li>Entry 4</li>
+            </ul>
+            <footer>
+                <p>small footer text</p>
+            </footer>
+        </div>
     </body>
-    <footer>
-    </footer>
 </html>
